@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest-2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!--NAVBAR-->
+        <nav>
+            <div class="navbar">
+                <a href="index.html" class="logo">Library </a>
+                <div class="navele">
+                    <ul class="list">
+                        <li>
+                            <a href="#books">Books</a>
+                        </li>
+                        <li>
+                            <a href="#register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NAVBAR ENDS HERE-->
+
+        <!--TABLE-->
+        <section class="books" id="books">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bhagavad Gita (श्रीमद्भगवद्गीता)
+                                <!--NESTED TABLE-->
+                                <table class="nextedtable">
+                                    <tr>
+                                        <td>Publication Date: 400 BCE - 400 CE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count: 575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN: 9004366278193</td>
+                                    </tr>
+                                </table>
+                                <!--NESTED TABLE CLOSE-->
+                            </td>
+                            <td>Vyasa</td>
+                            <td>Hindu Religious Text</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ramcharitmanas
+                                <!--NESTED TABLE-->
+                                <table class="nextedtable">
+                                    <tr>
+                                        <td>Publication Date: 1633</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count: 984</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN: 30267779902424</td>
+                                    </tr>
+                                </table>
+                                <!--NESTED TABLE CLOSE-->
+                            </td>
+                            <td>Tulsidas</td>
+                            <td>Hindu Religious Text</td>
+                            <td>Not Available</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Atharvaveda
+                                <!--NESTED TABLE-->
+                                <table class="nextedtable">
+                                    <tr>
+                                        <td>Publication Date: 900 BCE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count: 376</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN: 35292118900043</td>
+                                    </tr>
+                                </table>
+                                <!--NESTED TABLE CLOSE-->
+                            </td>
+                            <td>Gopatha Brahmana</td>
+                            <td>Medical</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Bhagavata Purana
+                                <!--NESTED TABLE-->
+                                <table class="nextedtable">
+                                    <tr>
+                                        <td>Publication Date: 950-1050 C.E.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count: 1449</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN: 35261234567324</td>
+                                    </tr>
+                                </table>
+                                <!--NESTED TABLE CLOSE-->
+                            </td>
+                            <td>Veda Vyasa</td>
+                            <td>Hindu Religious Text</td>
+                            <td>Not Available</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Garuda Purana
+                                <!--NESTED TABLE-->
+                                <table class="nextedtable">
+                                    <tr>
+                                        <td>Publication Date: 800 to 1000 CE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count: 128</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN: 35567485909924</td>
+                                    </tr>
+                                </table>
+                                <!--NESTED TABLE CLOSE-->
+                            </td>
+                            <td>Vyasa</td>
+                            <td>Hindu Religious Text</td>
+                            <td>Available</td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+        </section>
+        <!--TABLE ENDS HERE-->
+
+        <!--FORM-->
+        <section id="register" class="register">
+            <div class="reg">
+                <form action="" method="POST">
+                    <label for="fname">First Name:* </label><br>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your First Name..." required> <br>
+                    <label for="lname">Last Name:* </label><br>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your Last Name..." required> <br>
+                    <label for="email">Email ID:* </label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email ID..." required> <br>
+                    <label for="dob">Date Of Birth:* </label> <br>
+                    <input type="date" name="dob" id="dob" placeholder="Enter your DOB..." required> <br>
+                    <label for="age">Age:* </label><br>
+                    <input type="number" name="age" id="age" placeholder="Enter your Age..." required min="5" max="100"> <br>
+                    <label for="password">Password:* </label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password..." required
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$"
+                        title="Password may only contain letters and numbers"> <br>
+                    <label for="cpassword">Confirm Password:* </label><br>
+                    <input type="password" name="cpassword" id="cpassword" placeholder="Confirm your Password..." required
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$"
+                        title="Password may only contain letters and numbers"> <br>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!--FORM ENDS HERE-->
+
+    </main>
+</body>
+
+</html>
